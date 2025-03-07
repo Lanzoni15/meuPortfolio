@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+.profile-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+    border: 2px solid #00e6e6;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e6e6;
+    margin-bottom: 15px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+}
+
+.profile-info h1 span {
+    color: #00e6e6;
+}
+
+.profile-info p {
+    color: gray;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.details div {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.details i {
+    color: #00e6e6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #00e6e6;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #00b3b3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #111;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #00e6e6;
+}
+
+.case-studies {
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #00e6e6;
+}
+
+.hire-me {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.project-card {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 230, 230, 0.5);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h2 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+    color: #00e6e6;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-icons img {
+    width: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 90%;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .profile-card {
+        max-width: 90%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}

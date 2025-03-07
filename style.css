@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.profile-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+    border: 2px solid #00e6e6;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e6e6;
+    margin-bottom: 15px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+}
+
+.profile-info h1 span {
+    color: #00e6e6;
+}
+
+.profile-info p {
+    color: gray;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.details div {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.details i {
+    color: #00e6e6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00e6e6;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn:hover {
+    background-color: #00e6e6;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #111;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #00e6e6;
+}
+
+.case-studies {
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #00e6e6;
+}
+
+.hire-me {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 90%;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .profile-card {
+        max-width: 90%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}
