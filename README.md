@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio! Este site foi desenvolvido para apresentar minhas habilidades, projetos e facilitar o contato profissional.  
 
-🔗 **Acesse o portfólio aqui:** [Meu Portfólio](https://SEU-LINK-AQUI.com)  
+🔗 **Acesse o portfólio aqui:** [Meu Portfólio](https://arthurlanzoni-fullstackdeveloper.netlify.app/)  
 
 ---
 
